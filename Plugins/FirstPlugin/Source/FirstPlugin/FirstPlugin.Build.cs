@@ -6,8 +6,8 @@ public class FirstPlugin : ModuleRules
 {
 	public FirstPlugin(ReadOnlyTargetRules Target) : base(Target)
 	{
-		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
-		
+		// PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
+		PCHUsage = ModuleRules.PCHUsageMode.NoPCHs;
 		PublicIncludePaths.AddRange(
 			new string[] {
 				// ... add public include paths required here ...

@@ -2,6 +2,8 @@
 
 #include "FirstGISubsystem.h"
 #include "FirstRunnable.h"
+#include "HAL/RunnableThread.h"
+#include "Async/TaskGraphInterfaces.h"
 
 void UFirstGISubsystem::Initialize(FSubsystemCollectionBase &Collection)
 {
@@ -76,6 +78,7 @@ void UFirstGISubsystem::Initialize(FSubsystemCollectionBase &Collection)
     */
 
     // FEvent
+    /*
     FEvent *SyncEvent = FPlatformProcess::GetSynchEventFromPool();
     UE_LOG(LogTemp, Display, TEXT("[%s][%d]In main thread start"), *FString(__FUNCTION__), __LINE__);
 
@@ -95,4 +98,5 @@ void UFirstGISubsystem::Initialize(FSubsystemCollectionBase &Collection)
     FPlatformProcess::ReturnSynchEventToPool(SyncEvent);
 
     UE_LOG(LogTemp, Display, TEXT("[%s][%d]In main thread end"), *FString(__FUNCTION__), __LINE__);
+    */
 }
